@@ -9,11 +9,7 @@
     --text-selected : #34D399;
     --cell-size: 100px;
 
-    /* images */
-    --female-1 : url('./assets/f1.png');
-    --female-2: url('./assets/f2.png');
-    --male-1: url('./assets/m1.png');
-    --male-2: url('./assets/m2.png');
+  
 }
 
 * > * {
@@ -25,7 +21,6 @@ body{
     background: rgb(54, 54, 54);
 }
 
-/* starting window */
 .container{
     height: 100vh;
     display: flex;
@@ -75,7 +70,6 @@ body{
 }
 
 
-/* Main Game Board */
 #board{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -120,8 +114,6 @@ body{
 }
 
 
-/* x is equal to female */
-/* y is equal to male */
 .block.x{
     background: var(--female-1) var(--text-yellow) no-repeat;
     background-size: cover;
@@ -143,7 +135,7 @@ body{
     background-size: cover;
 }
 
-/* Draw and Winner Msg Window */
+
 .start-game, .draw-msg, .winner-msg{
     position: fixed;
     top: 0;
