@@ -11,12 +11,6 @@ export function Profile(){
            removeImgSelection(GAME.selectedProfile);
            document.querySelector(`[data-id='${target}']`).classList.add("selected");
 
-        //    swap values if user selecte second profile
-        if (target == 'x2' || target == 'y2'){
-            GAME.X_CLASS = "x2",
-            GAME.Y_CLASS = "y2";
-        }
-
         // set turns
         GAME.turn = target == 'y' || target == 'y2' ? true : false;
 
